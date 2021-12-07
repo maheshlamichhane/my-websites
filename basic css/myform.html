@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>My Own Form</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: black;
+            color:white;
+            font-family: 'PT Sans', sans-serif;
+        }
+        .container
+        {
+            max-width:400px;
+            margin:30px auto;
+            padding:15px 20px;
+        }
+        .container p
+        {
+            text-align: center;
+            padding-top: 10px;
+        }
+        
+        .container .form-wrap
+        {
+            background-color: white;
+            color:black;
+            padding:15px 20px;
+        }
+        .container .form-wrap .form-group
+        {
+            padding-top:10px;
+           
+        }
+        .container .form-group p,h1 
+        {
+            text-align: center;
+        }
+        .container .form-wrap label 
+        {
+            display: block;
+        }
+        .container .form-wrap input 
+        {
+            width:100%;
+            border:1px solid #ccc;
+            padding:10px 15px;
+            border-radius: 5px;
+        }
+        .container .form-wrap #submit
+        {
+            margin-top:15px;
+            background-color: #5f17ed;
+            color:white;
+            font-size: 1 rem;
+            border-radius: 5px;
+        }
+        .container .form-wrap #submit:hover
+        {
+           background-color: #270864;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrap">
+            <h1>Information</h1>
+            <p>Here is my full personal information.</p>
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" name="firstname"/>
+            </div>
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" name="lastName"/>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email"/>
+            </div>
+            <div class="form-group">
+                <label>Age:</label>
+                <input type="number" name="age"/>
+            </div>
+            <div class="form-group">
+                <label>DOB:</label>
+                <input type="date" name="dob"/>
+            </div>
+            <input type="submit" value="submit" id="submit" />
+            <p>You are accessing personal information from this page.so please never tried to mis-use of 
+                my information.
+            </p>
+        </div>
+        <p>&copy By Mahesh Lamichhane</p>
+    </div>
+</body>
+</html>
